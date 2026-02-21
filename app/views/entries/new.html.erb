@@ -1,0 +1,22 @@
+<h1>New Post</h1>
+
+<form action="/entries" method="post">
+  <input type="hidden" name="place_id" value="<%= @place["id"] %>">
+
+  <p>
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title">
+  </p>
+  
+  <p>
+    <label for="occurred_on">Date</label>
+    <input type="text" name="occurred_on" id="occurred_on">
+  </p>
+
+  <p>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+  </p>
+
+  <button>Submit</button>
+</form>
