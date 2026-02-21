@@ -3,13 +3,13 @@
 <ul>
   <% for entry in @entries %>
     <li>
-      <%= entry["title"] %> <%= entry["occurred_on"] %> - <%= contact["description"] %>
+      <%= entry["title"] %> <%= entry["occurred_on"] %> - <%= entry["description"] %>
     </li>
   <% end %>
 </ul>
 
 <p>
-  <a href="/entries/new?place_id=<%= @company["id"] %>">New Post</a>
+  <a href="/entries/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
 
 <p>
