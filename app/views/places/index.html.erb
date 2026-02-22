@@ -1,10 +1,15 @@
 <h1>Places I've Been</h1>
 
-  <% for place in @places %>
-    <div>
-      <a href="/places/<%= place["id"] %>" > <%= place["name"] %> </a>
-    </div>
-    <br>
+ 
+  <% if @places.empty? %>
+    <p><i>No places yet!</i></p>
+  <% else %>
+    <% for place in @places %>
+      <div>
+        <a href="/places/<%= place["id"] %>" > <%= place["name"] %> </a>
+      </div>
+      <br>
+    <% end %>
   <% end %>
 
 <br>
